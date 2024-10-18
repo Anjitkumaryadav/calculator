@@ -36,7 +36,6 @@ const App = () => {
   return (
     <div className={ `flex items-center justify-center h-screen ${isDark?"bg-gradient-to-br from-purple-700 to-green-950":"bg-gradient-to-br from-red-500 to-emerald-500"}`}>
       <div 
-      // className="bg-black text-white p-8 rounded-[15px] shadow-lg" 
       className={` p-8  rounded-[15px] shadow-lg ${isDark?"bg-black text-gray-200":"bg-white text-black"}`}
       >
         <span>Calc</span>
@@ -47,7 +46,6 @@ const App = () => {
             <button
               key={item}
               onClick={() => handleClick(item)}
-              // className="bg-zinc-900 text-white py-4 rounded-lg text-xl"
               className={`rounded-lg text-xl  hover:bg-zinc-800 ${
                 item === "/"
                   ? "  text-red-600 bg-zinc-900"
@@ -79,7 +77,6 @@ const App = () => {
                   ? "bg-zinc-900 text-4xl py-1 text-red-700"
                   : "bg-zinc-900 text-white"
               }`}
-              // className=" py-4 rounded-lg text-xl"
             >
               {item}
             </button>
