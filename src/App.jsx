@@ -102,6 +102,7 @@ const App = () => {
           >
             AC
           </button>
+          
           <button onClick={handleDelete} className="col-span-2 bg-red-700 text-white py-4 rounded-lg text-xl hover:bg-red-500">
             C
           </button>
